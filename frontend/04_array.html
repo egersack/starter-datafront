@@ -15,7 +15,7 @@ function randomPosition(){
     var height = window.innerHeight;
     var x = Math.floor(Math.random()*width);
     var y = Math.floor(Math.random()*height);
-    return(x,y)
+    return{x,y}
 }
 function addElementToPage(element){
     //append to doc
@@ -35,7 +35,7 @@ function createElement(position){
     return div; 
 }
 
-function addCircle(){
+function addCircles(){
     var circles = [];
     var position = null;
 
